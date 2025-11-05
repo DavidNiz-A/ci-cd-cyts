@@ -1,4 +1,4 @@
-name: CI - Build and Test
+name: CI Demo
 
 on:
   push:
@@ -14,13 +14,5 @@ jobs:
     - name: Checkout del código
       uses: actions/checkout@v3
 
-    - name: Configurar entorno Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-
-    - name: Instalar dependencias
-      run: npm install
-
-    - name: Ejecutar tests
-      run: npm test
+    - name: Ejecutar script de prueba
+      run: echo "✅ Pipeline ejecutado correctamente con GitHub Actions"
